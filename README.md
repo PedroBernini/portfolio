@@ -1,6 +1,6 @@
 ### My Portfolio
 
-I'm a technology student since 2017, taking a master's degree in technology at the State University of Campinas (UNICAMP) and developer. I love challenges that involve a lot of math, design and programming.
+I'm a technology student since 2017, Master’s Student in Technology at the State University of Campinas (UNICAMP) and developer. I love challenges that involve a lot of math, design and programming.
 
 <div align="center">
   <a href="https://github.com/pedrobernini">

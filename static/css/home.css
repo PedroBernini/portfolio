@@ -6,6 +6,8 @@
     --main-white: #f3f3f5;
     --main-purple: #6d3ed4;
     --main-orange: #da8572;
+    --main-golden:#ffd700;
+    --main-sky: #00b8ff;
 }
 
 html,
@@ -62,6 +64,14 @@ header,
 
 .font-color-main-orange {
     color: var(--main-orange);
+}
+
+.font-color-main-golden {
+    color: var(--main-golden);
+}
+
+.font-color-main-sky {
+    color: var(--main-sky);
 }
 
 .bq-experience {

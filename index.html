@@ -41,6 +41,50 @@
         .streakview {
             background-image: url("static/img/background_streak1.jpg");
         }
+
+        .badge {
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgb(0 0 0 / 0.25);
+        }
+
+        .certification {
+            display: inline-block;
+            border-radius: 5%;
+            overflow: hidden;
+        }
+
+        .card-certificate {
+            background: var(--clean-gray);
+            color: white;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+            
+        .card-certificate-img {
+            height: 200px;
+            object-fit: cover;
+        }
+            
+        .card-certificate-header {
+            margin-top: 20px;
+        }
+
+        .card-certificate-body {
+            padding: 20px;
+        }
+
+        .outline-text {
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        .image-with-shadow {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
     </style>
 
 </head>
@@ -111,40 +155,212 @@
     
     <main>
         <div id="about" class="container-fluid background-color-main-gray">
-            <div class="container pt-4 pb-2">
-                <section class="section feature-box mb-4">
+            <div class="container pt-4 pb-5">
+                <section class="section feature-box">
                     <h2 class="white-text text-center text-uppercase pt-5 wow fadeIn" data-wow-delay="0.2s"
                         style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Sobre <strong>mim</strong>
                     </h2>
                     <p class="white-text text-center w-responsive mx-auto wow fadeIn my-5" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Sou estudante de tecnologia desde 2017, mestrando em tecnologia pela Universidade Estadual de Campinas (UNICAMP) e desenvolvedor. Amo desafios que envolvam muita matemática, design e programação.</p>
-                    
-                    <div class="row features-big text-center wow fadeIn" data-wow-delay="0.2s"
-                        style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">
-                        <div class="col-xl-4 mb-4">
-                            <div class="card card-body hoverable background-color-clean-gray">
-                                <h5 class="font-color-main-green font-weight-bold text-uppercase mb-4">UX/UI Design</h5>
-                                <p class="font-color-main-blue">Design de interfaces com foco na experiência do usuário.</p>
-                            </div>
+                        style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">Sou estudante de tecnologia desde 2017, atualmente estou cursando o Mestrado em Tecnologia na Universidade Estadual de Campinas (UNICAMP) e trabalho como Analista de Dados no Itaú Unibanco. Busco expandir meus conhecimentos nas áreas que envolvam UX/UI Design, Automação e Dados.</p>
+                </section>
+
+                <section id="badges_certificados">
+                    <div class="row text-center">
+                        <div class="col-xl-4">
+                            <a href="http://badges.com.br/share/a93feb88e86e65b778c9e7a67ef1b7f7.php?a=403" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="badge">
+                                            <img src="static/img/badge_lean.png" alt="Badge" width="200" height="200">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-golden"><i class="fas fa-trophy trophy-icon"></i> Badge</h5>
+                                        <p class="card-text">Lean - Trained</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-        
-                        <div class="col-xl-4 mb-4">
-                            <div class="card card-body hoverable background-color-clean-gray">
-                                <h5 class="font-color-main-green font-weight-bold text-uppercase mb-4">Automação de Processos</h5>
-                                <p class="font-color-main-blue">Robôs de softwares que aprimoram a agilidade e eficiência operacional.</p>
-                            </div>
+
+                        <div class="col-xl-4">
+                            <a href="http://badges.com.br/share/f8e8d71c22cf8d37fdd5a8f5718d7c74.php?a=3016" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="badge">
+                                            <img src="static/img/badge_python.png" alt="Badge" width="200" height="200">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-golden"><i class="fas fa-trophy trophy-icon"></i> Badge</h5>
+                                        <p class="card-text">Programação com Python - Expert</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        
-                        <div class="col-xl-4 mb-4">
-                            <div class="card card-body hoverable background-color-clean-gray">
-                                <h5 class="font-color-main-green font-weight-bold text-uppercase mb-4">Ciência de Dados</h5>
-                                <p class="font-color-main-blue">Visão analítica sobre os dados para geração de insights.</p>
-                            </div>
+
+                        <div class="col-xl-4">
+                            <a href="http://badges.com.br/share/56587fbca78bf03b0f94efb57f4026c3.php?a=659" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="badge">
+                                            <img src="static/img/bagde_rpa.png" alt="Badge" width="200" height="200">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-golden"><i class="fas fa-trophy trophy-icon"></i> Badge</h5>
+                                        <p class="card-text">RPA Automation Anywhere - Trained</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/drive/folders/1QfWz4X2b9pefYDpMoe5Sk2jyTqs7GzVP?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/ibm.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - IBM</h5>
+                                        <p class="card-text">Behind the Code - IBM Cloud</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/file/d/1ExRkYGvVTXB8gOt_340Dem77kIHlDoCc/view?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/automation_anywhere.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - Automation</h5>
+                                        <p class="card-text">Bots with Automation Anywhere</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://www.udemy.com/certificate/UC-118956a5-bcc0-447f-9e60-cb5be0e90f43/" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/ux_unicornio.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - UX Unicórnio</h5>
+                                        <p class="card-text">UI Design Focused on UX</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/file/d/1PNtK7NOf9Q3GkEhwbuTKZyZEJUlhn5TX/view?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/igti.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - IGTI</h5>
+                                        <p class="card-text">Bootcamp UX Designer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://www.udemy.com/certificate/UC-OHW3WXLQ/" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/ia_expert.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - IA Expert</h5>
+                                        <p class="card-text">Reinforcement Learning with Python</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/file/d/1imeZkawMPkbJ4iiQ4G8_MDBGH9g2I-MA/view?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/mit.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - MIT</h5>
+                                        <p class="card-text">Introduction to Python</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/file/d/1_G-wDcrj7ERSCP5Mp3VSdmPL6n6JH3CL/view?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/eia.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - EIA</h5>
+                                        <p class="card-text">Cientista de Dados com Python e R</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://www.udemy.com/certificate/UC-65750c76-8d0c-48fd-b5b9-3d71f1d65308/" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/udemy.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - Udemy</h5>
+                                        <p class="card-text">Formação Cientista de Dados</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <a href="https://drive.google.com/file/d/1rcfen_D_A1ApANGZj4kvp4eLZpjBBG6J/view?usp=sharing" target="_blank">
+                                <div class="card-certificate hoverable">
+                                    <div class="card-certificate-header">
+                                        <div class="certification">
+                                            <img src="static/img/dsa.png" alt="Badge" width="100" height="100">
+                                        </div>
+                                    </div>
+                                    <div class="card-certificate-body">
+                                        <h5 class="card-title font-color-main-sky"><i class="fas fa-certificate"></i> Certificação - DSA</h5>
+                                        <p class="card-text">Python para Análise de Dados</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </section>
             </div>
-        </div>        
+        </div>
     
         <div class="container-fluid background-color-main-white">
             <div class="container pb-3">
@@ -153,7 +369,7 @@
                         <div class="col-md-6 mb-3 wow fadeIn" data-wow-delay="0.4s"
                             style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
                             <div class="d-flex justify-content-center">
-                                <h4 class="font-color-main-blue font-weight-bold text-uppercase mb-3 pb-3 mt-4 wow" data-wow-delay="0.2s"
+                                <h4 class="font-color-main-purple font-weight-bold text-uppercase mb-3 pb-3 mt-4 wow" data-wow-delay="0.2s"
                                     style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">
                                     <strong>Soft Skills</strong>
                                 </h4>
@@ -175,7 +391,7 @@
                         <div class="col-md-6 mb-3 wow fadeIn" data-wow-delay="0.4s"
                             style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
                             <div class="d-flex justify-content-center">
-                                <h4 class="font-color-main-blue font-weight-bold text-uppercase mb-3 pb-3 mt-4 wow" data-wow-delay="0.2s"
+                                <h4 class="font-color-main-purple font-weight-bold text-uppercase mb-3 pb-3 mt-4 wow" data-wow-delay="0.2s"
                                     style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s;">
                                     <strong>Hard Skills</strong>
                                 </h4>
@@ -378,7 +594,7 @@
                                 <h5 class="font-color-main-green">Blockchain</h5>
                                 <h4 class="card-title">Network SHA-256</h4>
                                 <p class="card-text grey-text">Rede de dados baseada na arquitetura Blockchain com aplicação do algoritmo de hash seguro de 256 bits.</p>
-                                <h5 class="font-color-main-blue">Em desenvolvimento</h5>
+                                <h5 class="font-color-main-purple">Em desenvolvimento</h5>
                             </div>
                         </div>
                     </div>
@@ -387,9 +603,9 @@
                         <div class="card card-cascade narrower">
                             <div class="card-body card-body-cascade">
                                 <h5 class="font-color-main-green">Computer Vision</h5>
-                                <h4 class="card-title">Detecção de Estresse Físico</h4>
-                                <p class="card-text grey-text">Modelo de classificação do nível de estresse físico em organismos a partir de imagens termográficas em tempo real.</p>
-                                <h5 class="font-color-main-blue">Em desenvolvimento</h5>
+                                <h4 class="card-title">Detecção de Intensidade Física</h4>
+                                <p class="card-text grey-text">Modelo de classificação do nível de intensidade de exercício físico a partir de imagens termográficas em tempo real.</p>
+                                <h5 class="font-color-main-purple">Em desenvolvimento</h5>
                             </div>
                         </div>
                     </div>

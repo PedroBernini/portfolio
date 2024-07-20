@@ -1,6 +1,6 @@
 $(document).ready(function() {
     new Typed(".typing", {
-        strings: ["UX/UI Design", "Automação", "Dados"],
+        strings: ["Dados", "Automação", "Softwares"],
         typeSpeed: 80,
         backSpeed: 50,
         loop: true
